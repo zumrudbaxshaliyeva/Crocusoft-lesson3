@@ -1,0 +1,1 @@
+import './all_tasks/Closure/task1.js';
