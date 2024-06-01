@@ -1,6 +1,6 @@
 const detectGender ={
     showInfo: function(){
-        console.log(`${this.name} was detected as ${this.gender}`);
+        return `${this.name} was detected as ${this.gender}`;
     }
 };
 
@@ -13,8 +13,12 @@ const animal2 = {
     gender: 'female',
 }
 
-detectGender.showInfo.call(animal1);
-detectGender.showInfo.call(animal2);
+const animals= {
+    animal1: detectGender.showInfo.call(animal1),
+    animal2: detectGender.showInfo.call(animal2)
+}
+
+console.log(animals);
 
 
 
